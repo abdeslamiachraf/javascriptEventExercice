@@ -1,0 +1,14 @@
+body{
+    display: flex;
+
+}
+div{
+    flex: 1;
+}
+.ping, .pong{
+    flex: 1;
+    font: 300% sans-serif;
+    text-align: center;
+    background-color: #d1d1d1;
+    border-style: dotted;
+}

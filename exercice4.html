@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 200px;height: 210px;background-color: black;">
+
+    </div>
+    <label for=""></label><br>
+    <label for=""></label><br>
+    <label for=""></label><br>
+    <label for=""></label>
+<input type="text">
+    <script>
+        var div=document.getElementsByTagName('div')[0]
+        div.addEventListener('mousemove',function(e){
+var l=document.querySelectorAll('label')[0]
+var l1=document.querySelectorAll('label')[1]
+var l2=document.querySelectorAll('label')[2]
+var l3=document.querySelectorAll('label')[3]
+
+
+/*keydown
+keypress
+code
+keyup
+*/
+l.innerHTML=e.screenX;
+l1.innerHTML=e.screenY;
+l2.innerHTML=e.clientX;
+l3.innerHTML=e.clientY;
+
+
+        })
+        var elt=document.querySelector('input')
+    elt.addEventListener('keydown',(e)=>{
+if(e.key=="Enter" || e.key=="A"){
+    alert('bonjour  '+elt.value)
+    e.preventDefault();}
+
+
+    })
+    
+    
+    
+    </script>
+    
+</body>
+</html>
